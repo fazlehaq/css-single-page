@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{   
+    background-color: hsl(240, 22%, 93%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.bolder{
+    font-weight: 600;
+}
+
+.bold{
+    font-weight: 400;
+}
+
+.Light,.lighter{
+    font-weight: 200;
+}
+
+.heading
+{
+    margin-top: 0.5em;
+}
+
+.catch-phrase{
+    margin-top: 0.5em;
+}
+
+
+.grid-container{
+
+    display: grid;
+    background: none;
+    /* grid-template-areas: 
+    ". one ." 
+    "two one three"
+    "two four three"
+    ". four ."; */
+
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+
+    place-content: center;
+    gap: 1.25em;
+    padding: 2em;
+    text-align: start;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+@media (min-width:955px)
+{
+    .grid-container{
+        grid-template-areas: 
+        ". one ." 
+        "two one three"
+        "two four three"
+        ". four .";  
+        padding: 2em 0;  
+    }
+
+}
+
+@media (max-width:954px) and (min-width:675px)
+{
+    .grid-container{
+        grid-template-areas: 
+        " one two" 
+        " three four";  
+        padding: 2em 0;  
+    }
+
+}
+
+.grid-item{
+    background-color: white;
+    width: fit-content;
+    padding: 1em 3em;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px ;
+}
+
+.grid-item img{
+    float: right;
+    margin-top: 1em;
+}
+
+.grid-container p{
+    margin-top: 0.5em;
+    width: 200px;
+}
+
+
+.item-1{
+    border-top: 3px solid hsl(180, 62%, 55%);
+    grid-area: one;
+}
+
+.item-2{
+    border-top: 3px solid hsl(0, 78%, 62%);
+    grid-area: two;
+}
+
+.item-3{
+    border-top: 3px solid hsl(34, 97%, 64%);
+    grid-area: three;
+}
+
+.item-4{
+    border-top: 3px solid hsl(212, 86%, 64%);
+    grid-area: four;
+}
+
+
+footer{
+    display: grid;
+    place-items: center;
+    height: 50px;
+    background-color: aquamarine;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding:0;
+    /* --light-gray: hsl(0, 
+    0%, 59%) */
+    --light-gray:#000;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+}
+
+/* Typography */
+.bold{
+    font-size: 18px;
+    
+    font-weight: 700;
+}
+
+.light{
+    font-weight: 400;
+    color: var(--light-gray);
+}
+
+/* Generics */
+
+.flex-row{
+    display: flex;
+    align-items: center;
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Layouts */
+.main-container{
+    
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+}
+
+
+.card{
+    /* height: 380px; */
+    width: min(320px,90%);
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.cover-photo{
+    height: 130px;
+    width: 100%;
+    background: url(./images/bg-pattern-card.svg);
+    margin-bottom: 4em;
+}
+
+.profile-photo{
+    position: relative;
+    top: 50%;
+    /* width: min-content; */
+    width: min(100px,33%);
+    margin: 0 auto;
+}
+
+.profile-photo img{
+    /* min-width:100px; */
+    /* width: 100%; */
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.name-age{
+    align-items: baseline;
+    margin-bottom: 0.25em;
+}
+
+.name{
+    margin: 0 0.75em;
+}
+
+.Location{
+    margin-bottom: 2em;
+}
+
+.profile-details{
+    object-fit: cover;
+    width: 100%;
+    padding: 1em 0;
+    border-top: 1px solid slategray;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width:400px){
+    
+}

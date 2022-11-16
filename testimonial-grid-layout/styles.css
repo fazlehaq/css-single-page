@@ -1,0 +1,135 @@
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+}
+
+.profile,.content{
+    margin-bottom: 1.25em;
+}
+
+.grid-container{
+    width: min(95%,1080px);
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    gap: 1.5em;
+    place-content: center;
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  */
+}
+
+@media  (min-width:30em) {
+    .grid-container{
+        grid-template-areas: 'one one '
+                             'two  five'
+                             'three five'
+                             'four four';
+    }
+
+    .item1{
+        background-color: brown;
+    }
+}
+
+
+
+@media  (min-width:50em) {
+    .grid-container{
+        grid-template-areas: 'one one two five'
+                             'three four four five';
+    }
+}
+
+
+
+.item{
+    background-color: deeppink;
+    color: white;
+    border-radius: 8px;
+}
+
+.item:hover{
+    object-fit: fill;
+    overflow: visible;
+}
+
+.item1{
+    background-color:hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+
+    grid-area: one;
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.item5{
+    /* grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    background-color:rgba(100, 149, 237);
+    grid-area: five;
+}
+
+.item4{
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    background-color: blue;
+    grid-area: four;
+}
+
+.item3{
+    /* grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 2;
+    grid-row-end: 3; */
+
+    grid-area: three;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.profile{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+img{
+    border-radius: 50%;
+    width: 28px;
+}
+
+.naming *{
+    margin: 0;
+}
+
+h5{
+    color: white;
+}
+
+.bold{
+}
+
+.naming p,.light{
+    font-size:11px;
+    font-weight: 100;
+    color: antiquewhite;
+}
+
+.content{
+    padding: 2em;
+    padding-bottom: 0.5em;
+}
+
+
+

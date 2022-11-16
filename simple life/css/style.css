@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+}
+
+.main-container{
+    width:60%;
+    margin: 0 auto;
+}
+
+/* Typography */
+.title h1,h2,h3,nav a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+.title h1{
+    margin: 0;
+    color: rgb(18, 60, 88);
+}
+
+header{
+    padding: 1.5em 0;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.container{
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.title,.title p{
+    margin: 0em ;
+    color: dodgerblue;
+}
+
+/* Navigation */
+nav ul{
+display: flex;
+justify-content: center;
+padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    margin-left:2em;
+}
+
+nav a{
+    text-decoration: none;
+    color:#837474;
+    color: rgb(18, 60, 88);
+    font-weight: 700;
+}
+
+nav a:hover,nav a:focus{
+    color: dodgerblue;
+
+}
+
+@media screen and (max-width:600px)
+{
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li{
+        margin : 0.25em 0;
+        justify-content: center;
+    }
+}
+
+/* articles */
+
+.Main{
+    display: flex;
+    margin: 3em auto;
+    justify-content: space-between;
+}
+
+main{
+    width: 76%;
+}
+
+aside{
+width: 20%;
+}
+
+.new-post{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-image{
+    width: 30%;
+    /* height: 100%; */
+}
+
+img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* .second
+{
+    /* width: ; */
+
+
+.first,.second{
+    display: flex;
+    flex-direction: column;
+}
+
+.previous-post{
+    display:flex;
+    justify-content: space-between;
+    /* text-align: ce; */
+}
+
+
+
+.previous-post-image{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+}
+
+.previous-post-details{
+    display: flex;
+    flex-direction: column;
+    width:70%
+}
+
+.previous-post-image p{
+    margin-top: 0.5em;
+}
+
+
+aside{
+    margin-top: 1em;
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+    align-items: center; 
+}
+
+@media screen and (max-width:670px)
+{
+    .main-container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .Main{
+        flex-direction: column;
+    }
+
+    main,aside{
+        margin: 0 auto;
+    }
+
+
+}
+
+aside img,aside p{
+    width: 50%;
+}
+
+.recent-post,.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+/* h3,p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+.previous-post{
+    margin-bottom: 2em;
+}
+
+.about-me{
+    border:none;
+    border: 10px solid #837474;
+    margin-bottom:3em;
+    padding: 0.25em;
+}
+
+.about-me p,.about-me h2 ,.about-me img{
+    margin: 0.25em;
+}
+
+.recent-posts{
+    border: 10px solid #837474;
+
+    justify-content: flex-start;
+}
+
+.recent-post p{
+    margin: 0.25em 0 1em 0;
+}
+
+.recent-posts h3{
+    text-align: center;
+}
+
+hr{
+    width: 70%;
+    margin :0.125em auto;
+}
+
+
+@media  screen and (max-width:676px) {
+    .about-me{
+        width: 80%;
+    }
+    aside img,aside p{
+        width: 60%;
+    }
+}
